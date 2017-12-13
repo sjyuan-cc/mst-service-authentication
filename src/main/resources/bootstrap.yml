@@ -1,0 +1,12 @@
+spring:
+  profiles:
+    active: ${ACTIVE_PROFILE:qa}
+  application:
+    name: authentication
+  cloud:
+    config:
+      uri: ${CONFIG_SERVER_URI:http://localhost:9999}
+
+management:
+  security:
+    enabled: false
